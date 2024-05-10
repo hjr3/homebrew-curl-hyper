@@ -1,11 +1,19 @@
-# Hjr3 Curl-hyper
+# Homebrew curl-hyper
 
-## How do I install these formulae?
+## Installation
 
-`brew install hjr3/curl-hyper/<formula>`
+`brew install hjr3/curl-hyper/curl`
 
 Or `brew tap hjr3/curl-hyper` and then `brew install <formula>`.
 
-## Documentation
+### Alias
+You probably have curl already installed in `/usr/bin/curl`. You can alias this version of curl:
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+`alias curl="$(brew --prefix hjr3/curl-hyper/curl)/bin/curl"`
+
+## Formulas
+
+This has two formulas:
+
+- libhyper - Hyper's FFI bindings
+- curl - the core curl formula with a small patch to use `-lhyper`
