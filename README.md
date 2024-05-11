@@ -26,14 +26,12 @@ Run `just symlink` to symlink this repository (assumed to be the current directo
 
 ### Run Formula Locally
 
-Run `just install` to install the formual if it does not already exist
+Run `just install curl-hyper` to install the formual if it does not already exist
 
-Run `just reinstall` to overwrite the existing formula
+Run `just reinstall curl-hyper` to overwrite the existing formula
 
 ### Teardown
 
-Run `just uninstall` to remove `hjr3/curl-hyper/curl-hyper`
-
-Run `just unlink` to remove the `hjr3/homebrew-curl-hyper` tap
-
-You can also run `just teardown` to do both of these steps.
+- Run `just uninstall curl-hyper` to remove `hjr3/curl-hyper/curl-hyper`
+- Run `just uninstall libhyper` to remove `hjr3/curl-hyper/libhyper`
+- Run `just unlink` to remove the `hjr3/homebrew-curl-hyper` tap

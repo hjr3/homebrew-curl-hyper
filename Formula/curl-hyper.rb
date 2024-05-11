@@ -33,6 +33,9 @@ class CurlHyper < Formula
   depends_on "openssl@3"
   depends_on "rtmpdump"
   depends_on "zstd"
+  ### START PATCH
+  depends_on "hjr3/curl-hyper/libhyper"
+  ### END PATCH
 
   uses_from_macos "krb5"
   uses_from_macos "zlib"
