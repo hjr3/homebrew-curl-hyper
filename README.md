@@ -17,3 +17,9 @@ This has two formulas:
 
 - libhyper - Hyper's FFI bindings
 - curl - the core curl formula with a small patch to use `-lhyper`
+
+## Development
+
+Run `just symlink` to symlink this repository (assumed to be the current directory) to the tap
+
+Run `just unlink` to remove the `hjr3/homebrew-curl-hyper` tap
