@@ -1,4 +1,4 @@
-class Curl < Formula
+class CurlHyper < Formula
   desc "Curl command-line tool using hyper as a backend"
   homepage "https://curl.se"
   # Don't forget to update both instances of the version in the GitHub mirror URL.
