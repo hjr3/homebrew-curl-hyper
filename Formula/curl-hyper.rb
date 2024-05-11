@@ -14,17 +14,6 @@ class CurlHyper < Formula
     regex(/href=.*?curl[._-]v?(.*?)\.t/i)
   end
 
-  bottle do
-    rebuild 2
-    sha256 cellar: :any,                 arm64_sonoma:   "d26dcef01fd3158c59dec70673ebbdcecc44bdffc51b735a45d018f3046d0dfd"
-    sha256 cellar: :any,                 arm64_ventura:  "abef4ff5922a5046cf31afc38dcdfec4cce7985a93d997276a8a9fe822782103"
-    sha256 cellar: :any,                 arm64_monterey: "562cd9cf121cb54692bdaade8319bc070421c426779fdfd4e7d9ce59d81e304c"
-    sha256 cellar: :any,                 sonoma:         "c98c05f1441d74c327717bddf1e4ea0d914a2f325550885c6b5084d6f03875ef"
-    sha256 cellar: :any,                 ventura:        "30c589452ee996815867e03b5104b7464b2580a991cb686d69485ab7c2348984"
-    sha256 cellar: :any,                 monterey:       "26ea8f03d564d0b7fb27dc9416bf989fb012185636e8cabf8bd6680b11b9dfdf"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "5f439e638e5fb4c63c8aa359eb5effd351fb8f3a6e59736281544cd1d739dc4f"
-  end
-
   head do
     url "https://github.com/curl/curl.git", branch: "master"
 
